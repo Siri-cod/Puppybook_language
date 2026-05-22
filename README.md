@@ -6,23 +6,29 @@
 
 ## Screenshots / 界面截图 / Screenshots
 
-Four main screens—from unlocking your shared notebook to playing phrases, editing entries, and naming your two languages.
-
 ### Open notebook · 打开笔记本 · Notizbuch öffnen
 
-
+<p align="center">
+  <img src="docs/screenshots/01-unlock.png" alt="Open notebook — two passwords" width="360" />
+</p>
 
 ### Main page · 主页 · Hauptseite
 
-
+<p align="center">
+  <img src="docs/screenshots/02-list.png" alt="Main page — entry list with playback" width="360" />
+</p>
 
 ### Edit entry · 编辑条目 · Eintrag bearbeiten
 
-
+<p align="center">
+  <img src="docs/screenshots/03-editor.png" alt="Edit entry — two languages and record" width="360" />
+</p>
 
 ### Languages · 语言设置 · Sprachen
 
-
+<p align="center">
+  <img src="docs/screenshots/04-languages.png" alt="Language settings — names and card tags" width="360" />
+</p>
 
 ---
 
