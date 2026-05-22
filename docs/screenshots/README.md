@@ -1,26 +1,24 @@
 # Screenshots for README
 
-Put interface images here, then commit them with the rest of the repo. GitHub renders paths like `docs/screenshots/login.png` from the repository root.
+Put interface images here, then commit them with the rest of the repo. GitHub renders paths like `docs/screenshots/01-unlock.png` from the repository root.
 
 ## Gallery
 
 | File | Screen | What to capture |
 | ---- | ------ | ----------------- |
-| `login.png` | Unlock | **Open notebook** dialog (Password 1 & 2) |
-| `main_page.png` | Main page | Entry list with at least one card (play buttons visible) |
-| `card.png` | Card detail | Entry detail (read, Edit / Delete / Close) |
-| `card_edit.png` | Card edit | **Edit entry** dialog (both languages + Record) |
-| `language.png` | Languages | **Languages** settings dialog |
+| `01-unlock.png` | Unlock | **Open notebook** dialog (Password 1 & 2) |
+| `02-list.png` | Main page | Entry list with at least one card (play buttons visible) |
+| `03-editor.png` | Card edit | **Add entry** / **Edit entry** dialog (both languages + Record) |
+| `04-languages.png` | Languages | **Languages** settings dialog |
 
 <p align="center">
-  <img src="login.png" alt="Open notebook — two passwords" width="320" />
-  <img src="main_page.png" alt="Main page — entry list with playback" width="320" />
-  <img src="card.png" alt="Card detail — entry with Edit and Delete" width="320" />
-  <img src="card_edit.png" alt="Edit entry — two languages and record" width="320" />
-  <img src="language.png" alt="Language settings — names and card tags" width="320" />
+  <img src="01-unlock.png" alt="Open notebook — two passwords" width="320" />
+  <img src="02-list.png" alt="Main page — entry list with playback" width="320" />
+  <img src="03-editor.png" alt="Edit entry — two languages and record" width="320" />
+  <img src="04-languages.png" alt="Language settings — names and card tags" width="320" />
 </p>
 
-Five screens only — no collection screenshots.
+Four screens only — no collection screenshots.
 
 ## How to capture
 
@@ -41,7 +39,7 @@ Five screens only — no collection screenshots.
 ## Markdown reference (in README.md)
 
 ```markdown
-<img src="docs/screenshots/login.png" alt="Open notebook dialog" width="320" />
+<img src="docs/screenshots/01-unlock.png" alt="Open notebook dialog" width="320" />
 ```
 
 Relative paths work on GitHub, GitLab, and most Markdown viewers when viewing the repo.
