@@ -12,12 +12,20 @@ Wenn es dir hilft, freuen wir uns über einen ⭐ Star.
 
 ## Screenshots / 界面截图 / Screenshots
 
-
-|                                          |                             |                             |                                        |
-| ---------------------------------------- | --------------------------- | --------------------------- | -------------------------------------- |
-| **Open notebook** 打开笔记本 Notizbuch öffnen | **Main page** 主页 Hauptseite | **Languages** 语言设置 Sprachen | **Edit entry** 编辑条目 Eintrag bearbeiten |
-|                                          |                             |                             |                                        |
-
+<table>
+  <tr>
+    <td align="center"><strong>Open notebook</strong><br>打开笔记本<br>Notizbuch öffnen</td>
+    <td align="center"><strong>Main page</strong><br>主页<br>Hauptseite</td>
+    <td align="center"><strong>Languages</strong><br>语言设置<br>Sprachen</td>
+    <td align="center"><strong>Edit entry</strong><br>编辑条目<br>Eintrag bearbeiten</td>
+  </tr>
+  <tr>
+    <td align="center"><img src="docs/screenshots/01-unlock.png" alt="Open notebook" width="220" /></td>
+    <td align="center"><img src="docs/screenshots/02-list.png" alt="Main page" width="220" /></td>
+    <td align="center"><img src="docs/screenshots/04-languages.png" alt="Languages" width="220" /></td>
+    <td align="center"><img src="docs/screenshots/03-editor.png" alt="Edit entry" width="220" /></td>
+  </tr>
+</table>
 
 ---
 
