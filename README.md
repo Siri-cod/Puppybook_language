@@ -6,16 +6,18 @@
 
 ## Screenshots / 界面截图 / Screenshots
 
-Add PNG or WebP files under [`docs/screenshots/`](docs/screenshots/) (see [capture guide](docs/screenshots/README.md)). Suggested: `01-unlock.png`, `02-list.png`, `03-editor.png`.
+Add PNG or WebP files under [`docs/screenshots/`](docs/screenshots/) (see [capture guide](docs/screenshots/README.md)). Files: `login.png`, `main_page.png`, `card.png`, `card_edit.png`, `language.png`.
 
 <p align="center">
-  <img src="docs/screenshots/01-unlock.png" alt="Open notebook — two passwords" width="300" />
-  <img src="docs/screenshots/02-list.png" alt="Entry list with playback" width="300" />
-  <img src="docs/screenshots/03-editor.png" alt="Add entry — two languages and record" width="300" />
+  <img src="docs/screenshots/login.png" alt="Open notebook — two passwords" width="280" />
+  <img src="docs/screenshots/main_page.png" alt="Main page — entry list with playback" width="280" />
+  <img src="docs/screenshots/card.png" alt="Card detail — entry with Edit and Delete" width="280" />
+  <img src="docs/screenshots/card_edit.png" alt="Edit entry — two languages and record" width="280" />
+  <img src="docs/screenshots/language.png" alt="Language settings — names and card tags" width="280" />
 </p>
 
 <p align="center">
-  <em>Unlock · List · Add entry</em> — <em>打开 · 列表 · 新建</em> — <em>Öffnen · Liste · Eintrag</em>
+  <em>Unlock · Main · Card · Edit · Languages</em> — <em>打开 · 主页 · 卡片 · 编辑 · 语言</em> — <em>Öffnen · Hauptseite · Karte · Bearbeiten · Sprachen</em>
 </p>
 
 ---
