@@ -2,11 +2,11 @@
 
 **Documentation:** [English](#english) · [中文](#中文) · [Deutsch](#deutsch)
 
-If you find this useful, please [give it a star](https://github.com/Siri-cod/Puppybook_language) ⭐.
+If you find this useful, please give it a star ⭐.
 
-如果觉得有用，欢迎 [点一个 ⭐ Star](https://github.com/Siri-cod/Puppybook_language)！
+如果觉得有用，欢迎点一个 ⭐！
 
-Wenn es dir hilft, freuen wir uns über einen [⭐ Star](https://github.com/Siri-cod/Puppybook_language).
+Wenn es dir hilft, freuen wir uns über einen ⭐ Star.
 
 ---
 
