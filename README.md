@@ -6,18 +6,66 @@
 
 ## Screenshots / 界面截图 / Screenshots
 
-Add PNG or WebP files under [`docs/screenshots/`](docs/screenshots/) (see [capture guide](docs/screenshots/README.md)). Files: `login.png`, `main_page.png`, `card.png`, `card_edit.png`, `language.png`.
+Five main screens—from unlocking your shared notebook to playing phrases, editing entries, and naming your two languages.
+
+### Open notebook · 打开笔记本 · Notizbuch öffnen
+
+Enter **Password 1** and **Password 2** to open your space. The same pair always opens the same notebook for you and your partner; check **Remember on this device** to skip this step next time.
+
+输入**密码一**与**密码二**打开笔记本。相同组合进入同一空间，可与伙伴共享；勾选**在本机记住**则下次免输密码。
+
+Beide Passwörter eingeben, um euren Bereich zu öffnen. Gleiches Paar = gleiches Notizbuch; optional auf diesem Gerät merken.
 
 <p align="center">
-  <img src="docs/screenshots/login.png" alt="Open notebook — two passwords" width="280" />
-  <img src="docs/screenshots/main_page.png" alt="Main page — entry list with playback" width="280" />
-  <img src="docs/screenshots/card.png" alt="Card detail — entry with Edit and Delete" width="280" />
-  <img src="docs/screenshots/card_edit.png" alt="Edit entry — two languages and record" width="280" />
-  <img src="docs/screenshots/language.png" alt="Language settings — names and card tags" width="280" />
+  <img src="docs/screenshots/login.png" alt="Open notebook — two passwords" width="360" />
 </p>
 
+### Main page · 主页 · Hauptseite
+
+Your phrase list: **search** both languages, filter with collection tabs, **sort** (e.g. newest first), and **play** each side’s recording—with speed control on the card.
+
+主页展示全部条目：**搜索**双语内容、用收藏夹标签筛选、**排序**，并在卡片上**播放**两侧录音（可调语速）。
+
+Alle Einträge auf einen Blick: **Suchen**, Sammlungs-Tabs, **Sortieren**, **Abspielen** mit Geschwindigkeit.
+
 <p align="center">
-  <em>Unlock · Main · Card · Edit · Languages</em> — <em>打开 · 主页 · 卡片 · 编辑 · 语言</em> — <em>Öffnen · Hauptseite · Karte · Bearbeiten · Sprachen</em>
+  <img src="docs/screenshots/main_page.png" alt="Main page — entry list with playback" width="360" />
+</p>
+
+### Card detail · 卡片详情 · Kartendetail
+
+Tap a card to read both languages, see when it was added or edited, and choose **Edit**, **Delete**, or **Close**.
+
+点击卡片查看双语内容与时间，可**编辑**、**删除**或**关闭**。
+
+Karte antippen → beide Sprachen und Zeitstempel; **Bearbeiten**, **Löschen** oder **Schließen**.
+
+<p align="center">
+  <img src="docs/screenshots/card.png" alt="Card detail — entry with Edit and Delete" width="360" />
+</p>
+
+### Edit entry · 编辑条目 · Eintrag bearbeiten
+
+Add a new phrase or change an existing one: text plus audio for **both languages**—upload a file or tap **Record**, then **Save**.
+
+新建或修改条目：两侧均可填写文字并上传或**录制**音频，**保存**后出现在列表中。
+
+Neuer oder geänderter Eintrag: Text und Audio für **beide Sprachen**—hochladen oder **Aufnehmen**, dann **Speichern**.
+
+<p align="center">
+  <img src="docs/screenshots/card_edit.png" alt="Edit entry — two languages and record" width="360" />
+</p>
+
+### Languages · 语言设置 · Sprachen
+
+Set the **names** and short **card tags** (e.g. DE, ZH) for this password space. Partners who use the same passwords see the same labels.
+
+为本密码空间设置两种语言的**名称**与**卡片缩写**；与伙伴使用相同两把密码时标签一致。
+
+**Namen** und **Karten-Tags** für diesen Bereich festlegen—Partner mit gleichen Passwörtern sehen dieselben Labels.
+
+<p align="center">
+  <img src="docs/screenshots/language.png" alt="Language settings — names and card tags" width="360" />
 </p>
 
 ---
