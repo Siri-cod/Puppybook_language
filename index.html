@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#1a3a2f" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Puppy Book</title>
+  <link rel="manifest" href="manifest.json" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="app-locked">
+  <dialog id="vault-unlock" class="dialog vault-dialog">
+    <form id="vault-form">
+      <h2>Open notebook</h2>
+      <p class="hint">
+        Enter both passwords. You only see content when both match a space; different pairs are separate and invisible to each other.
+      </p>
+      <label class="field">
+        <span>Password 1</span>
+        <input type="password" id="vault-pass1" autocomplete="off" required
+          placeholder="First password" />
+      </label>
+      <label class="field">
+        <span>Password 2</span>
+        <input type="password" id="vault-pass2" autocomplete="off" required
+          placeholder="Second password" />
+      </label>
+      <label class="field field--row">
+        <input type="checkbox" id="vault-remember" />
+        <span>Remember on this device (skip passwords next time)</span>
+      </label>
+      <p id="vault-error" class="vault-error hidden" role="alert"></p>
+      <div class="dialog-actions">
+        <button type="submit" class="btn primary">Open</button>
+      </div>
+    </form>
+  </dialog>
+
+  <header class="header">
+    <h1>Puppy Book</h1>
+    <p class="subtitle">A notebook for practicing pronunciation together in two languages.</p>
+    <div class="search-wrap">
+      <input type="search" id="search" placeholder="Search either language…" autocomplete="off" />
+    </div>
+    <div class="header-controls">
+      <div class="filter-tabs" id="filter-tabs" role="tablist" aria-label="Filter entries">
+        <!-- Populated by app.js: "All" + each collection + "+" button -->
+      </div>
+      <select id="sort-select" class="sort-select" aria-label="Sort entries">
+        <!-- Options filled by app.js from config languages -->
+      </select>
+    </div>
+  </header>
+
+  <main id="list" class="list" aria-live="polite"></main>
+
+  <p id="empty" class="empty hidden">No entries yet. Tap + to add one.</p>
+
+  <button type="button" id="fab" class="fab" aria-label="Add entry">+</button>
+
+  <dialog id="editor" class="dialog">
+    <form id="form">
+      <h2 id="editor-title">Add entry</h2>
+
+      <fieldset class="field-group" id="lang1-fieldset">
+        <legend class="field-group-title" id="lang1-legend">Language 1</legend>
+        <label class="field">
+          <span id="lang1-text-label">Language 1 text</span>
+          <textarea id="de-text" rows="3" enterkeyhint="newline" placeholder="Text in your first language"></textarea>
+        </label>
+        <div class="field">
+          <span class="field-label" id="lang1-audio-label">Language 1 audio</span>
+          <input type="file" id="de-audio-file" class="audio-file-input" accept="audio/*,.m4a,.mp3,.wav,.ogg,.aac" />
+          <div class="record-row">
+            <button type="button" id="de-record-btn" class="btn-record btn-record--lang1">Record</button>
+            <span id="de-record-status" class="record-status hidden">Recording… tap Stop when done</span>
+          </div>
+        </div>
+        <div id="de-audio-preview" class="audio-preview hidden">
+          <audio id="de-preview-player" controls preload="metadata"></audio>
+          <button type="button" id="clear-de-audio" class="link-btn">Clear Language 1 audio</button>
+        </div>
+      </fieldset>
+
+      <fieldset class="field-group" id="lang2-fieldset">
+        <legend class="field-group-title" id="lang2-legend">Language 2</legend>
+        <label class="field">
+          <span id="lang2-text-label">Language 2 text</span>
+          <textarea id="zh-text" rows="3" enterkeyhint="newline" placeholder="Text in your second language"></textarea>
+        </label>
+        <div class="field">
+          <span class="field-label" id="lang2-audio-label">Language 2 audio</span>
+          <input type="file" id="zh-audio-file" class="audio-file-input" accept="audio/*,.m4a,.mp3,.wav,.ogg,.aac" />
+          <div class="record-row">
+            <button type="button" id="zh-record-btn" class="btn-record btn-record--lang2">Record</button>
+            <span id="zh-record-status" class="record-status hidden">Recording… tap Stop when done</span>
+          </div>
+        </div>
+        <div id="zh-audio-preview" class="audio-preview hidden">
+          <audio id="zh-preview-player" controls preload="metadata"></audio>
+          <button type="button" id="clear-zh-audio" class="link-btn">Clear Language 2 audio</button>
+        </div>
+      </fieldset>
+
+      <p class="hint">Upload mp3, m4a, etc., or tap Record to capture with your microphone (permission required).</p>
+
+      <div class="dialog-actions">
+        <button type="button" id="cancel" class="btn secondary">Cancel</button>
+        <button type="submit" class="btn primary">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="languages-editor" class="dialog">
+    <form id="languages-form">
+      <h2>Language settings</h2>
+      <p class="hint">Set names and card abbreviations for this password space. Partners with the same passwords see the same labels.</p>
+
+      <fieldset class="field-group">
+        <legend class="field-group-title">Language 1</legend>
+        <label class="field">
+          <span>Name</span>
+          <input type="text" id="lang1-label" maxlength="40" required autocomplete="off"
+            placeholder="e.g. German, English" />
+        </label>
+        <label class="field">
+          <span>Card tag (max 8 characters)</span>
+          <input type="text" id="lang1-tag" maxlength="8" autocomplete="off"
+            placeholder="Leave blank to auto-generate" />
+        </label>
+      </fieldset>
+
+      <fieldset class="field-group">
+        <legend class="field-group-title">Language 2</legend>
+        <label class="field">
+          <span>Name</span>
+          <input type="text" id="lang2-label" maxlength="40" required autocomplete="off"
+            placeholder="e.g. Chinese, Japanese" />
+        </label>
+        <label class="field">
+          <span>Card tag (max 8 characters)</span>
+          <input type="text" id="lang2-tag" maxlength="8" autocomplete="off"
+            placeholder="Leave blank to auto-generate" />
+        </label>
+      </fieldset>
+
+      <div class="dialog-actions">
+        <button type="button" id="languages-cancel" class="btn secondary">Cancel</button>
+        <button type="submit" class="btn primary">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="collection-editor" class="dialog">
+    <form id="collection-form">
+      <h2 id="collection-editor-title">New collection</h2>
+
+      <div class="field">
+        <span class="field-label">Icon</span>
+        <div class="emoji-row">
+          <input type="text" id="collection-emoji" class="emoji-input" maxlength="4"
+            inputmode="text" autocomplete="off" aria-label="Emoji" />
+          <div id="emoji-suggestions" class="emoji-suggestions" role="listbox" aria-label="Suggested emojis"></div>
+        </div>
+      </div>
+
+      <label class="field">
+        <span>Name</span>
+        <input type="text" id="collection-name" maxlength="40" required
+          autocomplete="off" placeholder="e.g. Favorites, Travel, Family" />
+      </label>
+
+      <div class="dialog-actions">
+        <button type="button" id="collection-delete" class="btn danger hidden">Delete</button>
+        <button type="button" id="collection-cancel" class="btn secondary">Cancel</button>
+        <button type="submit" class="btn primary">Save</button>
+      </div>
+    </form>
+  </dialog>
+
+  <dialog id="detail" class="dialog">
+    <div class="detail-content">
+      <section class="detail-lang">
+        <span class="lang-tag lang-tag--lang1" id="detail-tag-lang1">L1</span>
+        <p id="detail-de-text" class="detail-text"></p>
+      </section>
+      <section class="detail-lang">
+        <span class="lang-tag lang-tag--lang2" id="detail-tag-lang2">L2</span>
+        <p id="detail-zh-text" class="detail-text"></p>
+      </section>
+      <p id="detail-meta" class="detail-meta"></p>
+      <div class="dialog-actions">
+        <button type="button" id="edit-entry" class="btn secondary">Edit</button>
+        <button type="button" id="delete-entry" class="btn danger">Delete</button>
+        <button type="button" id="close-detail" class="btn primary">Close</button>
+      </div>
+    </div>
+  </dialog>
+
+  <footer class="footer">
+    <div class="footer-row">
+      <button type="button" id="export-btn" class="text-btn">Export backup</button>
+      <span aria-hidden="true">·</span>
+      <label class="text-btn import-label">
+        Import backup
+        <input type="file" id="import-file" accept=".json,application/json" hidden />
+      </label>
+      <span aria-hidden="true">·</span>
+      <button type="button" id="languages-settings-btn" class="text-btn">Languages</button>
+      <span aria-hidden="true">·</span>
+      <button type="button" id="lock-vault-btn" class="text-btn">Lock &amp; sign out</button>
+    </div>
+    <p id="sync-status" class="sync-status"></p>
+  </footer>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>

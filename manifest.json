@@ -1,0 +1,10 @@
+{
+  "name": "Puppy Book",
+  "short_name": "Puppy Book",
+  "description": "A notebook for helping each other learn pronunciation in each other's languages",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0f1419",
+  "theme_color": "#1a3a2f",
+  "orientation": "portrait"
+}
