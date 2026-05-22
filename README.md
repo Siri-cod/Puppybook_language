@@ -59,7 +59,7 @@ This document is for **users** (how to open, add entries, share) and **developer
 
 #### Background
 
-The author is job-hunting in Germany, where many roles expect German. Textbooks and apps do not cover every moment you need—and a native-speaking friend wanted to help with pronunciation. Nothing fit “**practice with one person, save our own sentences, hear each other’s real voice**.”
+The author is job-hunting in Germany, where many roles expect German, and is learning seriously. Textbooks and apps do not cover every moment you need—and a native-speaking German friend was eager to help and is learning Chinese too. Nothing fit “**practice with one person, save our own sentences, hear each other’s real voice**.”
 
 So **Puppy Book** was built.
 
@@ -385,7 +385,7 @@ One Supabase project can host many `vaultId` values; use separate projects for h
 
 #### 开发背景
 
-本开发者正在德国找工作，发现多数岗位都要求会德语，下定决心开始学！可总有些时刻是课本和 App 帮不上忙的，德国朋友是母语者，非常希望能帮到我。市面上也找不到一款刚好贴合「**和一个人互相练、记我们自己的句子、听对方真人发音**」的工具。
+本开发者正在德国找工作，发现多数岗位都要求会德语，下定决心开始学！可总有些时刻是课本和 App 帮不上忙的，德国朋友是母语者，非常希望能帮到我，并且也在学中文。市面上也找不到一款刚好贴合「**和一个人互相练、记我们自己的句子、听对方真人发音**」的工具。
 
 所以我做了 **Puppy Book**。
 
@@ -719,7 +719,7 @@ Dieses Dokument richtet sich an **Nutzerinnen und Nutzer** (Öffnen, Einträge, 
 
 #### Hintergrund
 
-Die Entwicklerin sucht in Deutschland eine Stelle—viele verlangen Deutsch. Bücher und Apps reichen nicht überall; eine muttersprachliche Freundin wollte bei der Aussprache helfen. Es gab kein Tool für „**zu zweit üben, eigene Sätze speichern, die Stimme der anderen hören**“.
+Die Entwicklerin sucht in Deutschland eine Stelle—viele verlangen Deutsch, und sie hat sich ans Lernen gemacht. Bücher und Apps reichen nicht überall; eine deutschsprachige Freundin als Muttersprachlerin wollte unbedingt helfen und lernt selbst Chinesisch. Es gab kein Tool für „**zu zweit üben, eigene Sätze speichern, die Stimme der anderen hören**“.
 
 Daraus entstand **Puppy Book**.
 
