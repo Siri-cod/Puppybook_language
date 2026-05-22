@@ -346,7 +346,7 @@ One Supabase project can host many `vaultId` values; use separate projects for h
 
 ---
 
-# Puppy Book
+# 中文
 
 双人发音互助笔记本：每条记录包含**两种语言**各自的文本与真人发音，方便两人互相纠正发音、积累例句。
 
